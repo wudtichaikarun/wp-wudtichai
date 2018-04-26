@@ -1,0 +1,14 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: var(--color-font-dark);
+  border: none;
+  border-radius: var(--border-radius-normal);
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .8rem;
+}
