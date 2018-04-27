@@ -1,0 +1,22 @@
+#main {
+  color: var(--color-font-dark);
+
+  .post {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--color-hr);
+    }
+
+    &__header {
+      text-transform: uppercase;
+    }
+
+    &__title {
+      font-weight: var(--font-blod) ;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+  }
+}

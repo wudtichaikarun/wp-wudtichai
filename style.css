@@ -18,4 +18,134 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/@import url("https://fonts.googleapis.com/css?family=Maitree:400,500,600,700");:root{--color-card-header: #eee;--color-card-body: #fff;--color-card-footer: #eee;--card-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);--color-font-dark: #333;--color-font-light:#F5FEFD;--color-font-link: #6ec1e4;--color-background-primary: linear-gradient(to top, #2193b0 0%, #6dd5ed 100%);--color-white: #fff;--color-light-grey: #ccc;--color-background-body: #f9f9f9;--color-hamberger-background: #EBEBD3;--color-nav-background: #057796ec;--color-nav-hover: #03566d;--color-nav-active: rgba(0,0,0, .15);--color-nav-dropdown: #fff;--nav-z_index: 1000;--nav-font_size-main: 1.3rem;--nav-font_sixe-sub: 1rem;--border-radius-normal: .3rem;--border-radius-logo: .5rem;--default-font_size: 1.5rem;--grid-with: 98rem;--vertical-gap: 8rem;--vertical-gap-small: 2rem;--horizontal-gap: 3rem}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}@media only screen and (max-width: 75em){html{font-size:56.25%}}@media only screen and (max-width: 56.25em){html{font-size:50%}}body{-webkit-box-sizing:border-box;box-sizing:border-box;background:url("/wp-content/themes/ichr_v1/assets/img/bg.png") repeat-x;background-color:var(--color-background-body);color:var(--color-font-light);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}body #page{font-family:'Maitree', serif;font-size:var(--default-font_size);font-weight:400;-webkit-box-shadow:0 0 2rem 2rem var(--color-light-grey);box-shadow:0 0 2rem 2rem var(--color-light-grey);background-color:var(--color-white);max-width:var(--grid-with);margin:0 auto;position:relative}@media only screen and (max-width: 75em){body{padding:0}}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],textarea{color:var(--color-font-dark);border:none;border-radius:var(--border-radius-normal);display:block;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;padding:.8rem}
+*/
+/*
+0 - 600px :     Phone
+600 - 900px :   Tablet portrait
+900 - 1200px :  Tablet landscape
+[1200 - 1800] : is where our normal styles 
+1800px -> :     Big desktop
+*/
+/*
+@mixin respond-phone {
+  @media (max-width: 600px) { @content } ;
+}
+*/
+/*
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+@import url("https://fonts.googleapis.com/css?family=Maitree:400,500,600,700");
+:root {
+  --color-card-header: #eee;
+  --color-card-body: #fff;
+  --color-card-footer: #eee;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --color-font-dark: #333;
+  --color-font-light:#F5FEFD;
+  --color-font-link: #6ec1e4;
+  --font-blod: 600;
+  --color-background-primary: linear-gradient(to top, #2193b0 0%, #6dd5ed 100%);
+  --color-white: #fff;
+  --color-light-grey: #ccc;
+  --color-background-body: #f9f9f9;
+  --color-bg-header: #393939;
+  --color-hr: #ddd;
+  --color-hamberger-background: #EBEBD3;
+  --color-nav-background: #057796ec;
+  --color-nav-hover: #03566d;
+  --color-nav-active: rgba(0,0,0, .15);
+  --color-nav-dropdown: #fff;
+  --nav-z_index: 1000;
+  --nav-font_size-main: 1.3rem;
+  --nav-font_sixe-sub: 1rem;
+  --border-radius-normal: .3rem;
+  --border-radius-logo: .5rem;
+  --default-font_size: 1.5rem;
+  --grid-with: 98rem;
+  --vertical-gap: 8rem;
+  --vertical-gap-small: 2rem;
+  --horizontal-gap: 3rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* 
+  this is 1 rem = 10px 
+  10px(we want)/16px(browser defult) 
+  = 0.625 * 100 = 62.5%
+  */
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  background: url("/wp-content/themes/wudtichai/assets/img/bg.png") repeat-x;
+  background-color: var(--color-background-body);
+  color: var(--color-font-light);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+  body #page {
+    font-family: 'Maitree', serif;
+    font-size: var(--default-font_size);
+    font-weight: 400;
+    box-shadow: 0 0 2rem 2rem var(--color-light-grey);
+    background-color: var(--color-white);
+    max-width: var(--grid-with);
+    margin: 0 auto;
+    position: relative; }
+  @media only screen and (max-width: 75em) {
+    body {
+      padding: 0; } }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: var(--color-font-dark);
+  border: none;
+  border-radius: var(--border-radius-normal);
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .8rem; }
+
+.container {
+  padding: 3rem 1rem; }
+
+header {
+  background: var(--color-bg-header);
+  color: var(--color-white); }
+
+#main {
+  color: var(--color-font-dark); }
+  #main .post:not(:last-child) {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-hr); }
+  #main .post__header {
+    text-transform: uppercase; }
+  #main .post__title {
+    font-weight: var(--font-blod);
+    margin-bottom: 1rem;
+    font-style: italic; }
+
+footer {
+  background: var(--color-bg-header);
+  color: var(--color-white);
+  text-align: center; }

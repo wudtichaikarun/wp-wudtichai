@@ -9,12 +9,16 @@
   --color-font-dark: #333;
   --color-font-light:#F5FEFD; 
   --color-font-link: #6ec1e4;
+  --font-blod: 600;
 
   // COLOR ---------------------------------
   --color-background-primary: linear-gradient(to top, #2193b0 0%, #6dd5ed 100%);
   --color-white: #fff;
   --color-light-grey: #ccc;
   --color-background-body: #f9f9f9;
+
+  --color-bg-header: #393939;
+  --color-hr: #ddd;
 
   // NAV-MENU ------------------------------
   --color-hamberger-background: #EBEBD3;
@@ -77,7 +81,7 @@ body {
   // padding: 0 3rem;
 
   // max-width: 96rem;
-  background: url('/wp-content/themes/ichr_v1/assets/img/bg.png') repeat-x;
+  background: url('/wp-content/themes/wudtichai/assets/img/bg.png') repeat-x;
   background-color: var(--color-background-body);
   color: var(--color-font-light); 
   -webkit-font-smoothing: antialiased;

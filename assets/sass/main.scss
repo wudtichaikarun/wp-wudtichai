@@ -3,3 +3,12 @@
 
 // components
 @import 'components/input';
+@import 'components/container';
+
+// layout
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/footer';
+
+// pages
+@import 'pages/index';
