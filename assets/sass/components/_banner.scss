@@ -1,0 +1,68 @@
+.banner {
+  &-logo {
+    border-radius: var(--border-radius-logo);
+    padding: 0;
+    overflow: hidden;
+    height: 7rem;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &-text{
+    line-height: 1.4; 
+
+    &__name {
+      font-size: 2.2rem;
+      font-weight: 700;
+
+      @include respond(tab-port) {
+        font-size: 1.7rem;
+      }
+
+      @include respond(phone) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      padding-left: .2rem;
+      font-weight: 500;
+
+      // size < 575.98px
+      @include respond(phone) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &-feature {
+    min-width: 24rem;
+
+    &__search--box {
+      form {
+        display: flex;
+
+        label {
+          width: 100%;
+        }
+
+        input {
+          margin-right: 1rem;
+        }
+  
+        svg, img {
+          width: 3rem;
+          height: 3rem;
+          fill: #3b5998;
+        }
+      }
+    }
+  }
+}

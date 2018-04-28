@@ -1,4 +1,55 @@
 header {
   background: var(--color-bg-header);
   color: var(--color-white);
+  
+  .banner {
+    padding: 0 1rem;
+    
+    & > .row {
+      padding:  2rem 0;
+      height: 100%;
+      border: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      // size < 991px
+      @include respond(tab-mid) {
+        padding: 2rem 2rem;
+      }
+  
+      .banner-feature {
+        margin-left: auto;
+        display: block !important;
+
+        @include respond(phone) {
+          margin: 0 auto;
+        }
+      }
+
+      .banner-text {
+        padding: 0 1rem;
+
+        @include respond(phone) {
+          text-align: center;
+          margin: 0 auto;
+        }
+
+      }
+
+    }
+  }
+
+  & > #navigation {
+    & > .row {
+      
+      .nav-container {
+
+        @include respond(tab-small) {
+          // background-color: green;
+          margin-left: auto;
+        }
+      }
+    }
+  }
 }
