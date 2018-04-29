@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600,700');
+
 :root {
   // CARD pages/search ---------------------
   --color-card-header: #eee;
@@ -9,6 +11,7 @@
   --color-font-dark: #333;
   --color-font-light:#F5FEFD; 
   --color-font-link: #6ec1e4;
+  --font-primary: 'Barlow', sans-serif;
   --font-blod: 600;
 
   // COLOR ---------------------------------
@@ -17,7 +20,13 @@
   --color-light-grey: #ccc;
   --color-background-body: #f9f9f9;
 
-  --color-bg-header: #393939;
+  --color-primary:#393939;
+  // --color-primary-light:
+  --color-primary-dark: #303030;
+  // --color-secondary:
+  // --color-secondary-light:
+  // --color-secondary-dark:
+
   --color-hr: #ddd;
 
   // NAV-MENU ------------------------------
@@ -75,7 +84,7 @@ html {
 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Maitree:400,500,600,700');
+
 body {
   box-sizing: border-box;
   // padding: 0 3rem;
@@ -88,7 +97,7 @@ body {
   text-rendering: optimizeLegibility;
 
   #page {
-    font-family: 'Maitree', serif;
+    font-family: var(--font-primary);
     font-size: var(--default-font_size);
     font-weight: 400;
     

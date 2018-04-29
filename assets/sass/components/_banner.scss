@@ -50,10 +50,15 @@
         display: flex;
 
         label {
-          width: 100%;
+          width: 95%;
+
+          span {
+            // display: none;
+          }
         }
 
         input {
+          margin-top: .5rem;
           margin-right: 1rem;
         }
   

@@ -38,7 +38,7 @@ $breakpoint argument choices
 - tab-land
 - big-desktop
 */
-@import url("https://fonts.googleapis.com/css?family=Maitree:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,600,700");
 :root {
   --color-card-header: #eee;
   --color-card-body: #fff;
@@ -47,12 +47,14 @@ $breakpoint argument choices
   --color-font-dark: #333;
   --color-font-light:#F5FEFD;
   --color-font-link: #6ec1e4;
+  --font-primary: 'Barlow', sans-serif;
   --font-blod: 600;
   --color-background-primary: linear-gradient(to top, #2193b0 0%, #6dd5ed 100%);
   --color-white: #fff;
   --color-light-grey: #ccc;
   --color-background-body: #f9f9f9;
-  --color-bg-header: #393939;
+  --color-primary:#393939;
+  --color-primary-dark: #303030;
   --color-hr: #ddd;
   --color-hamberger-background: #EBEBD3;
   --color-nav-background: #057796ec;
@@ -99,7 +101,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
   body #page {
-    font-family: 'Maitree', serif;
+    font-family: var(--font-primary);
     font-size: var(--default-font_size);
     font-weight: 400;
     box-shadow: 0 0 2rem 2rem var(--color-light-grey);
@@ -132,7 +134,7 @@ textarea {
   padding: 3rem 1rem; }
 
 #navigation {
-  background: var(--color-nav-background);
+  background: var(--color-primary-dark);
   margin-bottom: .5rem; }
 
 #navigation.sticky {
@@ -466,16 +468,22 @@ i.ci {
   .banner-feature__search--box form {
     display: flex; }
     .banner-feature__search--box form label {
-      width: 100%; }
+      width: 95%; }
     .banner-feature__search--box form input {
+      margin-top: .5rem;
       margin-right: 1rem; }
     .banner-feature__search--box form svg, .banner-feature__search--box form img {
       width: 3rem;
       height: 3rem;
       fill: #3b5998; }
 
+.delimiter-long {
+  height: 10px;
+  width: 100%;
+  background: url("/wp-content/themes/wudtichai/assets/img/dotdot.png") repeat-x; }
+
 header {
-  background: var(--color-bg-header);
+  background: var(--color-primary);
   color: var(--color-white); }
   header .banner {
     padding: 0 1rem; }
@@ -519,6 +527,6 @@ header {
     font-style: italic; }
 
 footer {
-  background: var(--color-bg-header);
+  background: var(--color-primary);
   color: var(--color-white);
   text-align: center; }
