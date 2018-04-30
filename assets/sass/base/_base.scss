@@ -23,17 +23,17 @@
   --color-primary:#393939;
   // --color-primary-light:
   --color-primary-dark: #303030;
-  // --color-secondary:
+  --color-secondary: #057796ec;
   // --color-secondary-light:
-  // --color-secondary-dark:
+  --color-secondary-dark:#057796ec;
 
   --color-hr: #ddd;
 
   // NAV-MENU ------------------------------
   --color-hamberger-background: #EBEBD3;
-  --color-nav-background: #057796ec;
-  --color-nav-hover: #03566d;
-  --color-nav-active: rgba(0,0,0, .15);
+  // --color-nav-background: #057796ec;
+  // --color-nav-hover: #03566d;
+  --color-nav-active: var(--color-secondary); 
   --color-nav-dropdown: #fff;
   --nav-z_index: 1000;
   --nav-font_size-main: 1.3rem;

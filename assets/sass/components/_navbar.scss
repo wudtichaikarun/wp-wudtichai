@@ -10,7 +10,7 @@
   width: 100%;
   max-width:  var(--grid-with);
   z-index: var(--nav-z_index);
-  background: var(--color-nav-background);
+  background: var(  --color-secondary);
 }
 
 // fixed display not smooth
@@ -129,7 +129,7 @@
         }
        
         &:hover {
-          background: var(--color-nav-hover);
+          background: var( --color-secondary-dark);
 
           // @include respond(tab-small) {
           //   background: $link-hover-mobile;
@@ -179,7 +179,7 @@
           list-style: none;
           position: absolute;
           left: 0;
-          background: var(--color-nav-hover);
+          background: var( --color-secondary-dark);
           width: 100%;
           padding: 2rem;
 
@@ -342,7 +342,7 @@ i.ci {
         position: relative;
 
         &:hover {
-          background: var(--color-nav-hover);
+          background: var( --color-secondary-dark);
         }
 
         &:hover a + div {
@@ -350,7 +350,7 @@ i.ci {
         }
 
         a + div {
-          background: var(--color-nav-background);
+          background: var(  --color-secondary);
           border-radius: 0 0 2px 2px;
           box-shadow: 0 3px 1px rgba(0,0,0,.05);
           display: none;

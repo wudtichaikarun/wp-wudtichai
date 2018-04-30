@@ -55,11 +55,11 @@ $breakpoint argument choices
   --color-background-body: #f9f9f9;
   --color-primary:#393939;
   --color-primary-dark: #303030;
+  --color-secondary: #057796ec;
+  --color-secondary-dark:#057796ec;
   --color-hr: #ddd;
   --color-hamberger-background: #EBEBD3;
-  --color-nav-background: #057796ec;
-  --color-nav-hover: #03566d;
-  --color-nav-active: rgba(0,0,0, .15);
+  --color-nav-active: var(--color-secondary);
   --color-nav-dropdown: #fff;
   --nav-z_index: 1000;
   --nav-font_size-main: 1.3rem;
@@ -143,7 +143,7 @@ textarea {
   width: 100%;
   max-width: var(--grid-with);
   z-index: var(--nav-z_index);
-  background: var(--color-nav-background); }
+  background: var(--color-secondary); }
 
 .sticky + .delimiter-long {
   padding-top: 6rem; }
@@ -223,7 +223,7 @@ textarea {
           .nav-container > .nav ul.menu-main > li.menu-item {
             display: block; } }
         .nav-container > .nav ul.menu-main > li.menu-item:hover {
-          background: var(--color-nav-hover); }
+          background: var(--color-secondary-dark); }
           .nav-container > .nav ul.menu-main > li.menu-item:hover ul.sub-menu {
             display: block;
             opacity: 0;
@@ -252,7 +252,7 @@ textarea {
           list-style: none;
           position: absolute;
           left: 0;
-          background: var(--color-nav-hover);
+          background: var(--color-secondary-dark);
           width: 100%;
           padding: 2rem;
           display: none; }
@@ -355,11 +355,11 @@ i.ci {
       padding: 0;
       position: relative; }
       #nav-container #nav > ul > li:hover {
-        background: var(--color-nav-hover); }
+        background: var(--color-secondary-dark); }
       #nav-container #nav > ul > li:hover a + div {
         display: block; }
       #nav-container #nav > ul > li a + div {
-        background: var(--color-nav-background);
+        background: var(--color-secondary);
         border-radius: 0 0 2px 2px;
         box-shadow: 0 3px 1px rgba(0, 0, 0, 0.05);
         display: none;
@@ -515,10 +515,6 @@ header {
 
 #main {
   color: var(--color-font-dark); }
-  #main .post:not(:last-child) {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--color-hr); }
   #main .post__header {
     text-transform: uppercase; }
   #main .post__title {
