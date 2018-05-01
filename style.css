@@ -513,16 +513,39 @@ header {
     header > #navigation > .row .nav-container {
       margin-left: auto; } }
 
-#main {
-  color: var(--color-font-dark); }
-  #main .post__header {
-    text-transform: uppercase; }
-  #main .post__title {
-    font-weight: var(--font-blod);
-    margin-bottom: 1rem;
-    font-style: italic; }
-
 footer {
   background: var(--color-primary);
   color: var(--color-white);
   text-align: center; }
+
+#primary.content-area {
+  margin: 3rem 0;
+  padding: 0 1rem;
+  color: var(--color-font-dark); }
+  #primary.content-area header.page-header {
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem; }
+  #primary.content-area article.type-page, #primary.content-area article.type-post {
+    margin-bottom: 2rem;
+    color: inherit;
+    box-shadow: var(--card-shadow); }
+    #primary.content-area article.type-page .entry-header, #primary.content-area article.type-post .entry-header {
+      background-color: var(--color-card-header);
+      padding: .5rem 2rem;
+      color: var(--color-font-dark); }
+      #primary.content-area article.type-page .entry-header a, #primary.content-area article.type-post .entry-header a {
+        color: var(--color-font-link); }
+      #primary.content-area article.type-page .entry-header .entry-title a, #primary.content-area article.type-post .entry-header .entry-title a {
+        color: var(--color-font-link); }
+    #primary.content-area article.type-page .entry-summary, #primary.content-area article.type-post .entry-summary {
+      background-color: var(--color-card-body);
+      padding: 1rem 2rem;
+      border-left: 1px solid var(--color-card-header);
+      border-right: 1px solid var(--color-card-header); }
+    #primary.content-area article.type-page .entry-footer, #primary.content-area article.type-post .entry-footer {
+      display: none;
+      background-color: var(--color-card-footer);
+      padding: .5rem 2rem; }
+      #primary.content-area article.type-page .entry-footer .edit-link a, #primary.content-area article.type-post .entry-footer .edit-link a {
+        color: var(--color-font-link); }
