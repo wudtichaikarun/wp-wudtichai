@@ -54,8 +54,10 @@ $breakpoint argument choices
   --color-light-grey: #ccc;
   --color-background-body: #f9f9f9;
   --color-primary:#393939;
+  --color-primary-opacity:#525252da;
   --color-primary-dark: #303030;
   --color-secondary: #057796ec;
+  --color-secondary-light: #11d8eed7;
   --color-secondary-dark:#057796ec;
   --color-hr: #ddd;
   --color-hamberger-background: #EBEBD3;
@@ -481,6 +483,40 @@ i.ci {
   height: 10px;
   width: 100%;
   background: url("/wp-content/themes/wudtichai/assets/img/dotdot.png") repeat-x; }
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--color-primary-opacity);
+  z-index: 9000; }
+  .loader__spinner {
+    width: 4rem;
+    height: 4rem;
+    border: 0.5rem solid var(--color-white);
+    border-radius: 100%;
+    margin: 50vh auto 0;
+    transform: translateY(-50%); }
+    .loader__spinner::after {
+      content: '';
+      position: absolute;
+      top: -.5rem;
+      left: -.5rem;
+      width: 4rem;
+      height: 4rem;
+      border: .5rem solid transparent;
+      border-top: 0.5rem solid var(--color-secondary-light);
+      border-radius: 100%;
+      transform: rotate(45deg);
+      animation: wheel 1s ease-in-out infinite; }
+
+@keyframes wheel {
+  from {
+    transform: rotate(45deg); }
+  to {
+    transform: rotate(405deg); } }
 
 header {
   background: var(--color-primary);

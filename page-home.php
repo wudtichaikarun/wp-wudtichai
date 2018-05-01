@@ -3,7 +3,6 @@
   Template Name: หน้าหลัก
 */
 get_header(); ?>
-
   <!-- SECTION MENU FEATURE -->
   <main id="main">
     <div class="row">

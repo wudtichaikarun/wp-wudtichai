@@ -1,0 +1,37 @@
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--color-primary-opacity);
+  z-index: 9000;
+
+  &__spinner {
+    width: 4rem;
+    height: 4rem;
+    border: .5rem solid var(--color-white);
+    border-radius: 100%;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -.5rem;
+      left: -.5rem;
+      width: 4rem;
+      height: 4rem;
+      border: .5rem solid transparent;
+      border-top: .5rem solid var(--color-secondary-light);
+      border-radius: 100%;
+      transform: rotate(45deg);
+      animation: wheel 1s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes wheel {
+  from { transform: rotate(45deg); }
+  to { transform: rotate(405deg); }
+}

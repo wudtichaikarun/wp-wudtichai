@@ -42,6 +42,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- LOADER SPINNER -->
+<div class="loader">
+	<div class="loader__spinner"></div>
+</div>
+			
 <div id="page" class="site">
 	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ichr_v1' ); ?></a> -->
 
