@@ -518,6 +518,30 @@ i.ci {
   to {
     transform: rotate(405deg); } }
 
+.banner {
+  /* how to position center content style1 */
+  display: table;
+  /* how to position center content style2 */
+  /* position: relative; */
+  width: 100%;
+  margin-top: .5rem; }
+  .banner--default {
+    background: url("/wp-content/themes/wudtichai/assets/img/stuff-feature.jpg") no-repeat;
+    background-size: cover; }
+  .banner__title {
+    /* how to position center content style1 */
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5rem 0;
+    /* how to position center content style2 */
+    /* position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); */
+    text-align: center;
+    color: var(--color-white); }
+
 header {
   background: var(--color-primary);
   color: var(--color-white); }

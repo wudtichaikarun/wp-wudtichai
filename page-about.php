@@ -2,7 +2,10 @@
 /*
   Template Name: เกี่ยวกับเรา
 */
-get_header(); ?>
+get_header(); 
+
+include 'inc/banner.php';
+?>
 
   <!-- SECTION MENU FEATURE -->
   <main id="main">
