@@ -5,6 +5,8 @@
 get_header(); 
 
 include 'inc/banner.php';
+
+include 'inc/breadcremb.php';
 ?>
 
   <!-- SECTION MENU FEATURE -->

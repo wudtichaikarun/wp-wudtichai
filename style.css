@@ -542,6 +542,16 @@ i.ci {
     text-align: center;
     color: var(--color-white); }
 
+.breadcrumb {
+  color: var(--color-font-link);
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  padding: .5rem 0 .5rem 1rem; }
+  .breadcrumb a {
+    color: inherit;
+    display: inline-block;
+    padding-right: .5rem; }
+
 header {
   background: var(--color-primary);
   color: var(--color-white); }

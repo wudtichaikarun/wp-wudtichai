@@ -1,0 +1,11 @@
+.breadcrumb {
+  color: var(--color-font-link);
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  padding: .5rem 0 .5rem 1rem;
+  a {
+    color: inherit;
+    display: inline-block;
+    padding-right: .5rem;
+  }
+}
